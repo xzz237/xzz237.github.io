@@ -1,248 +1,187 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-
-<!-- Head tag -->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!--Description-->
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-
-  <!--Author-->
-  
-  <meta name="author" content="John Doe">
-  
-
-  <!--Open Graph Title-->
-  
-      <meta property="og:title" content="徐真真的博客"/>
-  
-  <!--Open Graph Description-->
-  
-  <!--Open Graph Site Name-->
-  <meta property="og:site_name" content="徐真真的博客"/>
-  <!--Type page-->
-  
-      <meta property="og:type" content="website" />
-  
-  <!--Page Cover-->
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- 百度统计 -->
-    <script>
-	var _hmt = _hmt || [];
-	(function() {
-  	var hm = document.createElement("script");
-  	hm.src = "https://hm.baidu.com/hm.js?c0451e16533956173997b85f7a8de666";
-  	var s = document.getElementsByTagName("script")[0]; 
-  	s.parentNode.insertBefore(hm, s);
-	})();
-    </script>
-  <!-- Title -->
+    <link rel="icon" href="/images/favicon.ico">
   
   <title>徐真真的博客</title>
-
-
-  <link rel="shortcut icon" href="/favicon.ico">
-    <!--font-awesome-->
-  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Custom CSS/Sass -->
   
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/styles.css">
 
+  
+<script src="/lib/jquery.js"></script>
+
+  
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+
+  
+<script src="/js/common.js"></script>
+
+  
+<script src="/lib/bootstrap/js/bootstrap.js"></script>
+
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
-
-<body>
-
-  <!-- Nav -->
-  <header class="site-header">
-  <div class="header-inside">
-    
-    <div class="logo">
-      <a href="/" rel="home">
-        
-        <img src="http://oct3pmpde.bkt.clouddn.com/timg.jpg" alt="徐真真的博客" height="60">
-        
-      </a>
+  <body>
+    <header class="header">
+  <div class="color-bar">
+    <ul>
+      <li class="bar1"></li>
+      <li class="bar2"></li>
+      <li class="bar3"></li>
+      <li class="bar4"></li>
+      <li class="bar5"></li>
+      <li class="bar6"></li>
+    </ul>
+  </div>
+  <div class="header-wrapper">
+    <div class="blog-title">
+      
+        <img class="logo" src="/images/logo.png" alt="logo">
+      
+      <a href="/" class="title">徐真真的博客</a>
     </div>
-    <a class="header-name" href="/">
-            <span>徐真真的博客</span>
-            的部落宅
-        </a>
-    <!-- navbar -->
-    <nav class="navbar">
-      <!--  nav links -->
-      <div class="collapse">
-        <ul class="navbar-nav">
+    <nav class="navbar navbar-menu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="nav-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+        <ul class="menu menu-pc">
           
-          
-            <li>
-              <a href="/.">
-                
-                  <i class="fa fa-home "></i>
-                
-                首页
-              </a>
+            <li class="menu-item">
+              <a href="/" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
             </li>
           
-            <li>
-              <a href="/archives">
-                
-                  <i class="fa fa-archive "></i>
-                
-                归档
-              </a>
+            <li class="menu-item">
+              <a href="/tags/" class="menu-item-link"><i class="fa fa-tags"></i><span>Tags</span></a>
             </li>
           
-            <li>
-              <a href="/about">
-                
-                  <i class="fa fa-user "></i>
-                
-                关于
-              </a>
+            <li class="menu-item">
+              <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
             </li>
           
-            <li>
-              <a href="/project">
-                
-                  <i class="fa fa-folder-open "></i>
-                
-                项目
-              </a>
-            </li>
-          
-            <li>
-              <a href="/photo">
-                
-                  <i class="fa fa-photo "></i>
-                
-                相册
-              </a>
-            </li>
-          
-            <li>
-              <a href="/guestbook">
-                
-                  <i class="fa fa-edit "></i>
-                
-                留言
-              </a>
-            </li>
-          
-            <li>
-              <a href="/atom.xml">
-                
-                  <i class="fa fa-send "></i>
-                
-                RSS
-              </a>
+            <li class="menu-item">
+              <a href="https://github.com/littleee/" target="_blank" rel="noopener" class="menu-item-link"><i class="fa fa-github"></i><span>github</span></a>
             </li>
           
         </ul>
-      </div>
-      <!-- /.navbar-collapse -->
     </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
-    </div>
   </div>
 </header>
+<div class="collapse nav-collapse" style="position:fixed;top:59px;" id="bs-example-navbar-collapse-1">
+  <ul class="menu menu-mobile" style="list-style:none">
+    
+      <li class="menu-item">
+        <a href="/" class="menu-item-link"><i class="fa fa-home"></i><span>首页</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/tags/" class="menu-item-link"><i class="fa fa-tags"></i><span>Tags</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="/archives/" class="menu-item-link"><i class="fa fa-file"></i><span>归档</span></a>
+      </li>
+    
+      <li class="menu-item">
+        <a href="https://github.com/littleee/" target="_blank" rel="noopener" class="menu-item-link"><i class="fa fa-github"></i><span>github</span></a>
+      </li>
+    
+  </ul>
+</div>
+
+    <main class="main">
+      <div class="content">
+        
+
+<section class="banner">
+  <div class="headintro">
+    <p class="title">HELLO, IM CORA</p>
+    <p class="subtitle">三流代码 &amp; 一流Bug</p>
+  </div>
+</section>
 
 
-  <!-- Main Content -->
-  <div class="site-content home">
-      <div class="content-header" style="background: url(http://oct3pmpde.bkt.clouddn.com/back.jpg) no-repeat bottom;">
-        <div class="headline">
-            <a href="#" class="demo">
-                <div class="img" style="background-image:url(http://oct3pmpde.bkt.clouddn.com/avator.jpg)"></div>
-                <div class="cover_mask">
-                    <div class="info">
-                        <span>欢迎来到我的博客</br>by:th是个小屁孩</span>
-                    </div>
-                </div>
-                <div class="border"></div>
-            </a>
-            <h1 id="Hotnews"></h1>
-            <script type="application/javascript">
-               var content = "永远相信美好的事情即将发生";
-               var i = 0;
-               function show(){
-                   var str  = content.substr(0,i);
-                   Hotnews.innerHTML = str + "_";
-                   i++;
-                   if (i>content.length) i=0;
-                   setTimeout("show()",600);
-               }
-               window.onload = show();
-               </script>
-            <div class="header-link">
-              
-                
-                  <a href="https://github.com/th720309" class="icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                
-                  <a href="http://weibo.com/th0527" class="icon-weibo" target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i></a>
-                
-                  <a href="https://twitter.com" class="icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                
-                  <a href="https://facebook.com" class="icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                
-              
-            </div>
+
+<section class="posts">
+  
+    <article class="post">
+      <div class="post-meta">
+        <span class="post-time">2020-05-06</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2020/05/06/hello-world/">
+            
+              Hello World
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
         </div>
+      </div>
+      <div class="post-content">
+
+        
+
+        
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+        
+      </div>
+    </article>
+  
+</section>
+
+
+
+      </div>
+        <div class="footer">
+  <div class="footer-wrapper">
+    <div class="copyright">
+      
+      <span>&copy;</span>
+      
+      <span>2017 - 2020</span>
+      
+      <span class="author"><i class="fa fa-user"></i>徐真真</span>
     </div>
-  <main class="content-area">
     
-        <div class="article">
-          <div class="container">
-  <article class="post">
-    <h1 class="entry-title">
-      <a href="/2020/05/06/hello-world/" rel="bookmark">
-        Hello World  
-      </a>
-    </h1>
+      <span>Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> </span>
     
-  </article>
+    
+      <span>|</span> <span>Theme - <a href="https://github.com/littleee/corazon" target="_blank" rel="noopener">Corazon</a></span>
+      
+        <span>v1.0.0</span>
+      
+    
+  </div>
 </div>
 
-        </div> 
-    
-
-    
-
-  </main>
-
-</div>
-
-
-  <!-- Footer -->
-  <!-- Footer -->
-<footer class="site-info">
-  <p>
-    <span>徐真真的博客 &copy; 2020</span>
-    
-      <span class="split">|</span>
-      <span>th是个小屁孩的技术小屋</span>
-    
-  </p>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
-</footer>
-
-
-  <!-- After footer scripts -->
-  <!-- scripts -->
-
-<script src="/js/app.js"></script>
-
-
-
-
-</body>
-
+    </main>
+  </body>
 </html>
