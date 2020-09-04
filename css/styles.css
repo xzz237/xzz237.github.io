@@ -233,6 +233,7 @@ body {
 .header .header-wrapper .blog-title .logo {
   width: 32px;
   height: 32px;
+  margin: 0 20px;
 }
 .header .header-wrapper .blog-title .title {
   color: #fff;
