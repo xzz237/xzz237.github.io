@@ -110,14 +110,18 @@
       <span class="post-time">2020-09-04</span>
     </div>
     <div class="post-content">
-      <br>控制台输出结果是10  ， 说明正常执行了fn这个函数，这时，fun这个函数作用域，访问了另外一个函数 fn里面的局部变量num ,所以fn就是闭包函数( fn里产生了闭包现象或者说 num变量所在的函数就是闭包函数)<p></p>
+      <p>首先介绍一下闭包的概念</p>
+<p>闭包(closure)： 指有权访问另一个函数作用域中变量的函数</p>
+<p>由定义可知，闭包是函数，也就是说，如果一个函数内部产生了闭包的现象，这个函数就叫做闭包函数，那么什么是闭包现象呢？？举个简单的栗子<del>~</del></p>
+<p><img src="/2020/09/04/%E9%97%AD%E5%8C%85%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/1.png" alt="avatar"></p>
+<p>控制台输出结果是10  ， 说明正常执行了fn这个函数，这时，fun这个函数作用域，访问了另外一个函数 fn里面的局部变量num ,所以fn就是闭包函数( fn里产生了闭包现象或者说 num变量所在的函数就是闭包函数)</p>
 <p>fun函数作为fn的子函数能够使用num这个变量很好理解，但是fn 外面的作用域可以访问fn 内部的局部变量吗？ ？？是的，可以</p>
 <p>  我们fn 外面的作用域可以访问fn 内部的局部变量</p>
 <p>​                  </p>
 <p>这两个写法是一样的，结果也都是一样的 10 ，因为返回值是个函数，所以用f 来接收并调用  ，f 就是在fn函数的外部，但是仍然可以使用num 局部变量并正常输出，就相当于写了以下代码</p>
 <p>也就实现了 ： 一个作用域可以访问另外一个函数的局部变量</p>
 <p>闭包的主要作用: 延伸了变量的作用范围(本来函数内部的局部变量在函数执行完毕就会被销毁，现在要等所有的使用这个变量的函数都调用完才能被销毁)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">有不完整的以后完善</span><br></pre></td></tr></table></figure>
+<p><del>~ 有不完整的以后完善</del></p>
     </div>
   </article>
   <div class="post-nav">
