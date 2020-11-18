@@ -103,22 +103,34 @@
         
   <article class="post">
     <div class="post-title">
-      <h2 class="title">2020</h2>
+      <h2 class="title">Webpack打包基本用法</h2>
        
     </div>
      <div class="post-meta">
-      <span class="post-time">2020-09-04</span>
+      <span class="post-time">2020-11-18</span>
     </div>
     <div class="post-content">
-      <p>这是一个开始。。。。。。。。。。</p>
+      <h1 id="Webpack打包基本用法"><a href="#Webpack打包基本用法" class="headerlink" title="Webpack打包基本用法"></a>Webpack打包基本用法</h1><p>先写好基本代码</p>
+<p>1.在项目所在目录运行npm install webpack webpack-cli -D命令（安装webpack相关包）</p>
+<p>2.在项目根目录中，创建 webpack.config.js的webpack配置文件</p>
+<p>3.在webpack配置文件中，初始化如下基本配置</p>
+<p>module.exports={</p>
+<p>   mode:’development’    //mode用来配置编译模式（两个值可选：development【开发模式】production【生产模式】）</p>
+<p>}</p>
+<p>4.在package.json配置文件中的scripts节点下，新增如下代码</p>
+<p>“scripts”:{</p>
+<p>​    “dev”:”webpack”     //scripts节点下的脚本，可以通过 npm run  …  运行</p>
+<p>}</p>
+<p>5.在命令行运行npm run dev 命令，启动webpack进行项目打包</p>
+<p>之后会在项目目录中多出一个dist文件夹，里面有个main.js文件，就是打包好的兼容的js文件，在html代码中引入即可。（HTML文件中不用引入原本的js文件，只需引入打包好的main.js文件）</p>
 
     </div>
   </article>
   <div class="post-nav">
     <div class="post-nav-next post-nav-item">
       
-        <a href="/2020/09/03/%E5%BC%80%E5%AD%A6%E5%95%A6/" rel="next" title="开学啦">
-          <i class="fa fa-chevron-left"></i> 开学啦
+        <a href="/2020/09/04/%E9%97%AD%E5%8C%85%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" rel="next" title="闭包的简单使用">
+          <i class="fa fa-chevron-left"></i> 闭包的简单使用
         </a>
       
     </div>
@@ -127,8 +139,8 @@
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="/2020/09/04/%E5%9B%BE%E7%89%87/" rel="prev" title="图片">
-          图片 <i class="fa fa-chevron-right"></i>
+        <a href="/2020/11/18/Webpack%E6%89%93%E5%8C%85%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-1/" rel="prev" title="Webpack打包基本用法">
+          Webpack打包基本用法 <i class="fa fa-chevron-right"></i>
         </a>
       
     </div>

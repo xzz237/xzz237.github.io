@@ -5,22 +5,22 @@
   
   <title>徐真真</title>
   
-<link rel="stylesheet" href="/xzz237.github.io/css/styles.css">
+<link rel="stylesheet" href="/css/styles.css">
 
   
-<script src="/xzz237.github.io/lib/jquery.js"></script>
+<script src="/lib/jquery.js"></script>
 
   
-<link rel="stylesheet" href="/xzz237.github.io/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
 
   
-<script src="/xzz237.github.io/js/common.js"></script>
+<script src="/js/common.js"></script>
 
   
-<script src="/xzz237.github.io/lib/bootstrap/js/bootstrap.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.js"></script>
 
   
-<link rel="stylesheet" href="/xzz237.github.io/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
@@ -39,9 +39,9 @@
   <div class="header-wrapper">
     <div class="blog-title">
       
-        <img class="logo" src="/xzz237.github.io/images/logo.png" alt="logo">
+        <img class="logo" src="/images/logo.png" alt="logo">
       
-      <a href="/xzz237.github.io/" class="title">徐真真</a>
+      <a href="/" class="title">徐真真</a>
     </div>
     <nav class="navbar navbar-menu">
       <div class="container-fluid">
@@ -115,11 +115,78 @@
   
     <article class="post">
       <div class="post-meta">
+        <span class="post-time">2020-11-18</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2020/11/18/Webpack%E6%89%93%E5%8C%85%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95-1/">
+            
+              Webpack打包基本用法
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+        </div>
+      </div>
+      <div class="post-content">
+
+        
+
+        
+        
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <div class="post-meta">
+        <span class="post-time">2020-11-18</span>
+      </div>
+      <div class="post-title">
+        
+          <a class="post-title-link" href="/2020/11/18/Webpack%E6%89%93%E5%8C%85%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/">
+            
+              Webpack打包基本用法
+            
+          </a>
+          
+        
+        <div class="post-tags">
+          
+        </div>
+      </div>
+      <div class="post-content">
+
+        
+
+        
+        <h1 id="Webpack打包基本用法"><a href="#Webpack打包基本用法" class="headerlink" title="Webpack打包基本用法"></a>Webpack打包基本用法</h1><p>先写好基本代码</p>
+<p>1.在项目所在目录运行npm install webpack webpack-cli -D命令（安装webpack相关包）</p>
+<p>2.在项目根目录中，创建 webpack.config.js的webpack配置文件</p>
+<p>3.在webpack配置文件中，初始化如下基本配置</p>
+<p>module.exports={</p>
+<p>   mode:’development’    //mode用来配置编译模式（两个值可选：development【开发模式】production【生产模式】）</p>
+<p>}</p>
+<p>4.在package.json配置文件中的scripts节点下，新增如下代码</p>
+<p>“scripts”:{</p>
+<p>​    “dev”:”webpack”     //scripts节点下的脚本，可以通过 npm run  …  运行</p>
+<p>}</p>
+<p>5.在命令行运行npm run dev 命令，启动webpack进行项目打包</p>
+<p>之后会在项目目录中多出一个dist文件夹，里面有个main.js文件，就是打包好的兼容的js文件，在html代码中引入即可。（HTML文件中不用引入原本的js文件，只需引入打包好的main.js文件）</p>
+
+        
+      </div>
+    </article>
+  
+    <article class="post">
+      <div class="post-meta">
         <span class="post-time">2020-09-04</span>
       </div>
       <div class="post-title">
         
-          <a class="post-title-link" href="/xzz237.github.io/2020/09/04/%E9%97%AD%E5%8C%85%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">
+          <a class="post-title-link" href="/2020/09/04/%E9%97%AD%E5%8C%85%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">
             
               闭包的简单使用
             
@@ -136,8 +203,16 @@
 
         
         <p>首先介绍一下闭包的概念</p>
-<p>闭包(closure)： 指有权访问另一个函数作用域中变量的<strong>函数</strong></p>
-<p>由定义可知，闭包是函数，也就是说，如果一个函数内部产生了闭包的现象，这个函数就叫做闭包函数，那么什么是闭包现象呢？？举个简单的栗子<del>~</del></p>
+<p>闭包(closure)： 指有权访问另一个函数作用域中变量的函数</p>
+<p>由定义可知，闭包是函数，也就是说，如果一个函数内部产生了闭包的现象，这个函数就叫做闭包函数，那么什么是闭包现象呢？？举个简单的栗子<del>~</del><br>​​<br>​​<br>控制台输出结果是10  ， 说明正常执行了fn这个函数，这时，fun这个函数作用域，访问了另外一个函数 fn里面的局部变量num ,所以fn就是闭包函数( fn里产生了闭包现象或者说 num变量所在的函数就是闭包函数)</p>
+<p>fun函数作为fn的子函数能够使用num这个变量很好理解，但是fn 外面的作用域可以访问fn 内部的局部变量吗？ ？？是的，可以</p>
+<p>  我们fn 外面的作用域可以访问fn 内部的局部变量</p>
+<p>这两个写法是一样的，结果也都是一样的 10 ，因为返回值是个函数，所以用f 来接收并调用  ，f 就是在fn函数的外部，但是仍然可以使用num 局部变量并正常输出，就相当于写了以下代码</p>
+<p>也就实现了 ： 一个作用域可以访问另外一个函数的局部变量</p>
+<p>闭包的主要作用: 延伸了变量的作用范围(本来函数内部的局部变量在函数执行完毕就会被销毁，现在要等所有的使用这个变量的函数都调用完才能被销毁)</p>
+<p><del>华丽分割线</del></p>
+<p>  有不完整的以后完善</p>
+
         
       </div>
     </article>
@@ -148,7 +223,7 @@
       </div>
       <div class="post-title">
         
-          <a class="post-title-link" href="/xzz237.github.io/2020/09/04/%E5%9B%BE%E7%89%87/">
+          <a class="post-title-link" href="/2020/09/04/%E5%9B%BE%E7%89%87/">
             
               图片
             
@@ -164,7 +239,7 @@
         
 
         
-        <p><img src="xzz237.github.io/2020/09/04/%E5%9B%BE%E7%89%87/1.jpg" alt="avatar"></p>
+        <p><img src="/2020/09/04/%E5%9B%BE%E7%89%87/1.jpg" alt="avatar"></p>
 
         
       </div>
@@ -176,7 +251,7 @@
       </div>
       <div class="post-title">
         
-          <a class="post-title-link" href="/xzz237.github.io/2020/09/04/2020/">
+          <a class="post-title-link" href="/2020/09/04/2020/">
             
               2020
             
@@ -204,7 +279,7 @@
       </div>
       <div class="post-title">
         
-          <a class="post-title-link" href="/xzz237.github.io/2020/09/03/%E5%BC%80%E5%AD%A6%E5%95%A6/">
+          <a class="post-title-link" href="/2020/09/03/%E5%BC%80%E5%AD%A6%E5%95%A6/">
             
               开学啦
             
@@ -231,7 +306,7 @@
       </div>
       <div class="post-title">
         
-          <a class="post-title-link" href="/xzz237.github.io/2020/05/06/%E5%BE%90%E7%9C%9F%E7%9C%9F%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/">
+          <a class="post-title-link" href="/2020/05/06/%E5%BE%90%E7%9C%9F%E7%9C%9F%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E7%AB%A0/">
             
               徐真真的第一个文章
             
@@ -264,7 +339,7 @@
       </div>
       <div class="post-title">
         
-          <a class="post-title-link" href="/xzz237.github.io/2020/05/06/hello-world/">
+          <a class="post-title-link" href="/2020/05/06/hello-world/">
             
               Hello World
             
