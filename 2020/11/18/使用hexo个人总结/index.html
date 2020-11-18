@@ -110,12 +110,28 @@
       <span class="post-time">2020-11-18</span>
     </div>
     <div class="post-content">
-      <p>hexo也使用了挺久的了，虽然只是偶尔使用。。在这对使用过的命令做一个简单的总结，以便以后查看</p>
+      <p>hexo也使用了挺久的了，虽然只是偶尔使用。。（<strong><em>☆☆</em></strong>）</p>
+<p>在这对使用过的命令做一个简单的总结，以便以后查看</p>
 <ul>
-<li>创建新文章 <code>hexo new &quot;文章名&quot;</code>(会自动创建.md文章和相同文件名的文件夹，用来存放图片等)</li>
-<li>​</li>
+<li><p>创建新文章 <code>hexo new &quot;文章名&quot;</code>(会自动创建.md文章和相同文件名的文件夹，用来存放图片等)</p>
+</li>
+<li><p>添加图片使用<code>![](输入图片地址)</code>方式添加图片（使用Typora软件可直接使用自带编辑器，很方便）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如：![avatar](&#x2F;图片&#x2F;1.jpg)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 <code>&lt;!--more--&gt;</code>来对首页文章只显示一部分内容（要注意，more之前的内容需要再复制到more下面，否则查看全文只显示more后面的内容）</p>
+</li>
+<li><p>使用<code>hexo generate</code>      生成静态文件</p>
+</li>
+<li><p>使用<code>hexo deploy</code>          部署网站</p>
+</li>
+<li><p>使用<code>hexo server</code>          启动服务器。默认情况下，访问网址为： <code>http://localhost:4000/</code></p>
+<p>（当使用<code>hexo s</code> 后，对文章修改，保存后直接同步到网站，但是仍然需要完整步骤才能更新到服务器）</p>
+</li>
+<li><p>使用<code>hexo clean</code>            清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p>
+<p>在某些情况（尤其是更换主题后），如果发现对站点的更改无论如何也不生效，可能需要运行该命令。</p>
+<p><strong>总结：先使用<code>hexo g</code> 然后<code>hexo d</code> 最后<code>hexo s</code></strong></p>
+</li>
 </ul>
-
     </div>
   </article>
   <div class="post-nav">
